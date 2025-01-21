@@ -45,10 +45,11 @@ void printMap() {
 int main() {
     insert("parth", 1);
     insert("bhosale", 2);
+    insert("shraddha",10);
     printMap();
-    int value = get("parth");
+    int value = get("shraddha");
     if (value != -1) {
-        printf("Get value of 'parth': %d\n", value);
+        printf("Get value of 'shraddha': %d\n", value);
     }
 
     return 0;
