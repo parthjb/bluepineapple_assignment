@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .yellow {
+      background-color: rgb(232, 232, 85);
+    }
+
+    .green {
+      background-color: yellowgreen;
+    }
+
+    .pink {
+      background-color: palevioletred;
+    }
+
+     th, td, tr{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+ <table border="1">
+  <thead>
+    <tr>
+      <td rowspan="3">Day</td>
+      <td colspan="3">Seminar</td>
+    </tr>
+    <tr>
+      <td colspan="2">Schedule</td>
+      <td rowspan="2">Topic</td>
+    </tr>
+    <tr>
+      <td>Begin</td>
+      <td>End</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Monday</td>
+      <td rowspan="2" class="yellow">08:00 AM</td>
+      <td rowspan="2" class="pink">05:00 PM</td>
+      <td>Introduction to XML</td>
+    </tr>
+    <tr>
+      <td>Validty: DTD and Relax NG</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Tuesday</td>
+      <td class="yellow">08:00 AM</td>
+      <td class="yellow">11:00 AM</td>
+      <td rowspan="2">
+        Xpath
+      </td>
+  
+    </tr>
+    <tr>
+      <td class="yellow">11:00 AM</td>
+      <td class="green">02:00 PM</td>
+    </tr>
+    <tr>
+      <td class="green">02:00 PM</td>
+      <td class="pink">05:00 PM</td>
+      <td rowspan="1">Transformations</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td class="yellow">08:00 AM</td>
+      <td class="green">12:00 PM</td>
+      <td>XLS Formatting Objects</td>
+    </tr>
+  </tbody>
+ </table>
+</body>
+</html>
