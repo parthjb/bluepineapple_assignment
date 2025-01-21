@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .flex-heading {
+      display: flex;
+      background-color: blueviolet;
+      color: antiquewhite;
+      padding: 16px;
+    }
+
+    .layout-container {
+      display: flex;
+      gap: 16px;
+      padding: 16px;
+      flex-direction: column; 
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      gap: 16px;
+      flex: 1; /* Take up available space */
+    }
+
+    .flex-item {
+      background-color: #0cb6e0;
+      color: antiquewhite;
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: left;
+      box-sizing: border-box;
+    }
+
+    .flex-cityInfo {
+      flex: 2;
+      padding: 16px;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    @media (min-width: 768px) {
+      .layout-container {
+        flex-direction: row; /* Side-by-side layout for larger screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-heading">
+    <h1>Chania</h1>
+  </div>
+
+  <div class="layout-container">
+    <div class="flex-container">
+      <div class="flex-item">The Flight</div>
+      <div class="flex-item">The City</div>
+      <div class="flex-item">The Island</div>
+      <div class="flex-item">The Food</div>
+    </div>
+
+    <div class="flex-cityInfo">
+      <h1>The City</h1>
+      <p>Chania is the capital of the Chania region on the island of crete. The city can be divided into two parts, the old town and the modern city.</p>
+    </div>
+  </div>
+</body>
+</html>
