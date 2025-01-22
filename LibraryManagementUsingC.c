@@ -69,6 +69,7 @@ int main(){
     printf("Press 5 to exit..\n");
     printf("Enter your choice :");
     scanf("%d",&count);
+    
 
     switch (count)
     {
@@ -93,6 +94,7 @@ int main(){
            delete(deleteBook);
            break;
     default:
+           count = 5;
            break;
     }
   } while (count != 5);
